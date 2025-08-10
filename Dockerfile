@@ -1,5 +1,4 @@
-FROM node:hydrogen-buster
-RUN apt-get update && apt-get install -y git
+FROM node:current-alpine
 
 COPY graphserver.js .
 COPY package.json .
